@@ -4,7 +4,11 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"status": "ok", "message": "Azure DevOps Project 1 is running"}
+    return {
+        "status": "ok",
+        "message": "Version 2 deployed 🚀",
+        "day": "Day 4 - Continuous Deployment"
+    }
 
 @app.get("/health")
 def health():
