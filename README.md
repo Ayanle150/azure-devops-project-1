@@ -1,4 +1,4 @@
-# 🚀 Project 1 – Cloud-Native Application on Azure
+# Project 1 – Cloud-Native Application on Azure
 
 **Docker · GitHub Actions · Azure · CI/CD**
 
@@ -7,7 +7,7 @@ The focus is on **clean structure, automation, secure handling of credentials, a
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The goal of this project is to build and deploy a simple cloud-native application using modern DevOps principles.
 
@@ -22,7 +22,7 @@ This project is intentionally designed as a **portfolio-grade DevOps project**
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 - Understand DevOps in practice
 - Containerize applications with Docker
@@ -46,7 +46,7 @@ This project is intentionally designed as a **portfolio-grade DevOps project**
 
 ---
 
-## ☁️ Azure Setup
+## Azure Setup
 
 Azure was configured using **Azure for Students**.
 
@@ -65,7 +65,7 @@ Norway East was selected for compatibility and stability.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 azure-devops-project-1/
@@ -86,7 +86,7 @@ azure-devops-project-1/
 
 ---
 
-## ⚙️ Application (FastAPI)
+## Application (FastAPI)
 
 The application exposes two endpoints:
 
@@ -115,7 +115,7 @@ python3 -m uvicorn app.main:app --reload
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Automated tests are implemented using pytest.
 
@@ -135,7 +135,7 @@ This enforces quality gates before any artifact is built or published.
 
 ---
 
-## 🐳 Containerization with Docker
+## Containerization with Docker
 
 The application is packaged as a lightweight Docker container.
 
@@ -163,7 +163,7 @@ docker run -p 8000:8000 devops-app
 
 ---
 
-## 🔐 Azure Container Registry (ACR)
+## Azure Container Registry (ACR)
 
 Azure Container Registry is used as a private image repository between CI and runtime.
 
@@ -175,7 +175,7 @@ Repositories appear only after the first successful image push via CI.
 
 ---
 
-## 🔑 GitHub Secrets
+## GitHub Secrets
 
 Secrets are used to authenticate GitHub Actions against Azure securely.
 
@@ -189,7 +189,7 @@ No credentials are stored in code or committed to the repository.
 
 ---
 
-## 🔄 Continuous Integration (GitHub Actions)
+## Continuous Integration (GitHub Actions)
 
 The CI pipeline is triggered on every push to `main`.
 
@@ -204,7 +204,7 @@ This ensures traceability, reproducibility, and code quality.
 
 ---
 
-## ☁️ Deployment to Azure Container Apps
+## Deployment to Azure Container Apps
 
 The application is deployed using Azure Container Apps.
 
@@ -215,7 +215,7 @@ The application is deployed using Azure Container Apps.
 
 ---
 
-## ⚠️ Continuous Deployment (CD) – Tenant Limitation
+## Continuous Deployment (CD) – Tenant Limitation
 
 Full CD (GitHub → Azure deployment) using federated identity (OIDC) was evaluated.
 
@@ -231,7 +231,7 @@ This reflects real-world enterprise governance constraints.
 
 ---
 
-## ✅ Outcome
+## Outcome
 
 - Automated CI pipeline in place
 - Tests enforced before build
@@ -241,24 +241,3 @@ This reflects real-world enterprise governance constraints.
 
 ---
 
-## 🧠 Reflection
-
-This project provided hands-on experience with the full DevOps lifecycle.
-Key takeaways include:
-
-- The importance of CI quality gates
-- Container-based deployment strategies
-- Secure secret handling
-- Realistic cloud and identity constraints
-
-The project is designed to be clean, realistic, and extensible.
-
----
-
-## 🔮 Next Steps
-
-- Infrastructure as Code (Terraform)
-- Full CD using federated identity
-- Monitoring and observability
-- Environment-based deployments
-- Advanced deployment strategies
