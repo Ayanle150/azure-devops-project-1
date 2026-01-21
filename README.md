@@ -33,7 +33,7 @@ This project is intentionally designed as a **portfolio-grade DevOps project**
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **OS:** macOS
 - **Language:** Python 3.11
